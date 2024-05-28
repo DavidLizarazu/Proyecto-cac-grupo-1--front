@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="metadato" content="valor" http-equiv="cabezera-http" scheme="esquema">
+    <meta name="author" content="Daniel Ariza grupo 1">
+    <meta name="description" content="concesionaria">
+    <meta name="keywords" content="autos, venta, concesionaria, compras">
+    <link rel="shortcut icon" href="./img/icons8-home-16.png" type="img/x-con">
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="https://kit.fontawesome.com/29dc2d9c8d.js" crossorigin="anonymous"></script>
+
+     
+    <title>concesionaria</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="/img/logo.jpg" alt="Logo" class="logo"></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="favoritos.html">Favoritos</a></li>
+        <li><a href="registrar.html">Registrate</a></li>
+        <li><a href="quienes-somos.html">Quiénes somos</a></li>
+        <li><a href="NuetrasTiendas.html">Nuetras Tiendas</a></li>
+      </ul>
+        </nav>
+    </header>
+<section>
+    <h1><i class="fa-solid fa-car"></i>
+        <strong>Formulario</strong></h1>
+    <form onsubmit="return validateForm()">
+        <p>
+            <label for="imagen"></label>
+            <input type="image" src="img/form.jpg" alt="Imagen del producto" id="imagen" height="500" width="500">
+        </p>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Teléfono:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="checkbox">Acepto los términos y condiciones:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" required><br>
+        <label for="select">Selecciona tu auto:</label>
+        <select id="select" name="select" > 
+            <option value="pais">--Por favor seleccione un pais--</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Peru">Peru</option>
+            <option value="paraguay">Paraguay</option>
+        </select><br>
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+</body>
+</html>
